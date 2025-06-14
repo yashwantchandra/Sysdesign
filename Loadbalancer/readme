@@ -1,0 +1,15 @@
+
+source link: 
+https://www.linkedin.com/posts/ashishps1_30-blogs-to-learn-30-system-design-fundamentals-activity-7328659612201549827-8m7C?utm_source=share&utm_medium=member_desktop&rcm=ACoAADZBjtEBlh-jtysJ2EHnu93BRUgsyq22uGk
+
+Round Robin: same resources present on all the servers then : its is homogeneous and round robin is suitable here
+  * r1> first sever r2-> second server r3-> third server r4-> first server 
+Weighted Round Robin: different resource servers present then 
+  * weights : [5,1,1] : then first 5 requests will be served from the first sever then 6th with second then 7th with third server 
+IPhashing : if we want from certain ip address the hits must go to one specific server 
+  * after hashing the IP we will take hash%3 == this is the resultant server 
+Least Response time : the server giving least response time will be given the current request to be served 
+Least Connection : the server having least number of connections will server the current request 
+
+
+ 
